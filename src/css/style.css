@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+
 *
 {
     margin: 0;
@@ -6,12 +10,16 @@
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 }
-
+*::before, *::after {
+    content: '';
+    clear: both;
+    box-sizing: border-box;
+}
 :root {
 	--primary-color: #717275;
 	--background-image: transparent;
 	--background-color: #eff0f4;
-	--nav-background-color: #eff0f4;
+	--nav-background-color: #fff;
 	--menu-background-color: #0f6fd5;
 	--facilities-p-color: #777;
 	--black-white : #000;
@@ -35,7 +43,7 @@
 	--menu-lst-cld: #eff0f4;
 }
 body {
-    background: linear-gradient(rgba(4, 7, 11, .5), rgba(4, 9, 11, .7)),url('image/internshipmobile.jpg') no-repeat center center;
+    background: linear-gradient(rgba(4, 7, 11, .1), rgba(4, 9, 11, .2)),url('../image/internshipmobile.jpg') no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
 
@@ -43,12 +51,12 @@ body {
 header 
 {
     width: 100%;
-    position: relative;
+    position: absolute;
     height: 64px;
     display: flex;
     justify-content: center;
     background-color: transparent;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 
@@ -58,16 +66,30 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	background: var(--nav-background-color);
-	backdrop-filter: grayscale(10%) blur(10px) invert(30%);
+	/* backdrop-filter: grayscale(10%) blur(10px) invert(30%); */
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 2023;
+    transition: all .3s ease;
 	box-shadow: 0 4px 20px 0 rgba(255, 255, 255, .5);
+}
+nav>a {
+    text-decoration: none;
+    color: #FF4400;
 }
 nav img{
 	width: 75px;
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+.logo-name {
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 700;
 }
 .nav-links{
 	flex: 1;
@@ -196,9 +218,8 @@ nav .fa{
     justify-content: center;
     margin: 0 auto;
     padding: 60px 15px;
-    background-color: rgb(23, 167, 233);
     color: white;
-    background: linear-gradient(rgba(4, 7, 11, .5), rgba(4, 9, 11, .7)),url('image/internship.jpg') no-repeat center center;
+    background: linear-gradient(rgba(13, 15, 30, 0.7), rgba(13, 15, 30, .8)),url('../image/internship.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -210,7 +231,7 @@ nav .fa{
 
 .container-row {
     width: 100%;
-    margin: 0 -15px 0 -15px;
+    margin: -15px -15px 0 -15px;
     display: flex;
     /* justify-content: space-between; */
     align-items: stretch;
@@ -221,6 +242,7 @@ nav .fa{
 .container-column {
     width: 55%;
     padding: 0 15px;
+    display: inline-block;
 }
 
 .container-column-image {
@@ -228,14 +250,29 @@ nav .fa{
 }
 
 .container-column-title>h1 {
-    font-size: 48px;
-    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    color: #000;
+    background-color: #ffa53b;
+    padding: 20px 25px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 64px;
     line-height: 140%;
     margin-bottom: 16px;
-    text-shadow: 2px 1px 5px #000;
 }
 .container-column-title>h1>span {
     color: #FF4400;
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(4, 7, 11, .5);
+}
+.container-column-2 {
+    width: 45%;
+    padding: 0 15px;
+    display: inline-block;
+}
+.container-column-list-2 {
+    padding: 25px 15px;
 }
 .image-container {
     width: 100%;
@@ -267,15 +304,48 @@ nav .fa{
     max-width: 100%;
 }
 .container-column-list {
-    margin-bottom: 30px;
+    margin-top: -30px;
+    margin-right: -60px;
+    background-color: #ffa53b;
+    /* margin-bottom: 30px; */
+    padding: 0 0 0  20px;
 }
-.container-column-list>ul {
+.container-column-list>p {
+    font-size: 22px;
+    color: #000;
+    padding: 25px 20px;
+    background-color: #fff;
+}
+.container-column-list-2>ul {
     padding-left: 1.3em;
+    list-style: none;
 }
-.container-column-list>ul li {
-    font-size: 18px;
+.container-column-list-2>ul li {
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(4, 7, 11, .7);
+    padding: 5px 10px;
 }
-
+.container-column-list-2>ul li .fa-check {
+    padding-right: 10px;
+}
+.container-column-text strong {
+    font-size: 24px;
+    color: white;
+    padding: 10px 25px;
+    display: inline-block;
+    /* margin-top: -10px; */
+    background-color: #ffa53b;
+}
+.container-column .btn {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 22px;
+    border-bottom: 2px solid #eee;  
+}
 @media (max-width: 768px) {
     .container-column-title>h1 {
         line-height: 38px;
@@ -299,7 +369,7 @@ nav .fa{
     padding: 64px 0;
     position: relative;
     width: 100%;
-    background-color: #eff0f4;
+    background-color: #f3f6f8;
 }
 
 .description-container {
@@ -312,8 +382,16 @@ nav .fa{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    padding: 10px;
+    margin-top: 5%;
     flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    background-color: #f9f9f9;
+    color: #333; /* Dark gray font color */
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #ff4400;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .description-image {
     max-width: 100px;
@@ -331,10 +409,12 @@ nav .fa{
 
 .description-column-text {
     width: 100%;
-    text-align: justify;
+    /* text-align: justify; */
     align-items: stretch;
     padding: 0 15px;
     font: inherit;
+    background-color: #fff;
+    /* background: linear-gradient(to right, #1e5799, #2989d8); */
     line-height: 140%;
 }
 
@@ -343,12 +423,20 @@ nav .fa{
     font-weight: 700;
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
     line-height: 140%;
     margin-bottom: 12px;
-    color: #f06901;
+    color: #000;
+    font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark gray font color */
+  margin-bottom: 10px;
+}
+.description-column-text h4 span {
+    color: #FF4400;
 }
 .description-column-text p {
-    color: rgba(117,117,117,1);
+    color: black;
     margin-bottom: 24px;
 }
 .description-column-text h3 {
@@ -433,7 +521,7 @@ nav .fa{
     left: 0!important;
 }
 
-.ser-button-next:hover:after{
+.swiper-button-next:hover:after{
     animation: motion-next 1s linear infinite;
 }
 .swiper-button-prev:hover:after{
@@ -463,7 +551,16 @@ nav .fa{
     align-items: stretch;
     padding: 0 15px;
 }
+.description-column-img {
+    width: 50%;
+}
+.description-column-img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
 .description-image {
+    width: 50%;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -474,7 +571,11 @@ nav .fa{
     border-radius: 16px;
     object-fit: contain;
 }
-
+.ds-flx-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .description-image p {
     color: rgba(117,117,117,1);
     font-size: 13px;
@@ -485,28 +586,32 @@ nav .fa{
 .programs {
     width: 100%;
     position: relative;
-    background: url('image/internshipmo.jpg') no-repeat center center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #f06901;
 }
 
 .program-heading {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 50px;
     margin-bottom: 25px;
 }
 
-.program-heading-container {
+.program-heading-container, .program-heading-paragraph {
     width: 100%;
+    margin: auto;
+    text-align: center;
     max-width: 1180px;
 }
-
+.program-heading-paragraph p {
+    font-size: 20px;
+    color: #fff;
+}
 .program-heading h2 {
     font-size: 38px;
     font-weight: 700;
     line-height: 140%;
-    color: #f06901;
+    color: #fff;
 }
 .program-list-row {
     width: 100%;
@@ -531,6 +636,7 @@ nav .fa{
     height: 100%;
     padding: 10px;
     border-radius: 16px;
+    background-color: #fff;
     box-shadow: 0px 5px 30px 0px rgba(214,215,216,0.57);
 }
 
