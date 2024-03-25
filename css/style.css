@@ -9,11 +9,11 @@
     font-family: "DM Sans", sans-serif;
     transition: all .3s ease-in-out;
 }
-*::before, *::after {
+/* *::before, *::after {
     content: '';
     clear: both;
     box-sizing: border-box;
-}
+} */
 :root {
 	--primary-color: #717275;
 	--background-image: transparent;
@@ -118,7 +118,72 @@ nav img{
 nav .fa{
 	display: none;
 }
-
+@media(max-width: 850px) {
+	#close{
+		display: none;
+		position: fixed;
+		background: rgba(4, 9, 30, 0.8);
+		height: 100%;
+		width: 100%;
+		z-index: 2020;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links ul li a{
+		color: var(--min-nav-color);
+	}
+	.nav-links{
+		position: fixed;
+		background: var(--nav-background-color);
+		height: 100%;
+		width: 200px;
+		top: 0;
+		bottom: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2022;
+		transition: 0.75s;
+	}
+	nav{
+		backdrop-filter: none;
+	}
+    .navlinks-flex {
+        flex-direction: column;
+    }
+	nav .fa{
+		display: block;
+		color: var(--primary-color);
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	nav .fa-bars{
+		color: var(--bar);
+	}
+	nav .fas{
+		color: var(--min-fas);
+	}
+	.nav-links ul{
+		padding: 0 10px;
+	}
+	.nav-img{
+		position: relative;
+		width: 160px;
+		height: 80px;
+		/* background: url(image/logo2.png) no-repeat; */
+		/* background-size: cover; */
+	}
+	/* .imglogo{
+		display: none;
+	} */
+	/* .container{
+		display: none;
+	} */
+	.hidden{
+		transition: 1.75s;
+	}
+}
 /* Drop-down-menu */
 
 .sub-menu-1{
@@ -200,8 +265,8 @@ nav .fa{
     justify-content: center;
     margin: 0 auto;
     padding: 60px 15px;
-    color: white;
-    background: linear-gradient(rgba(13, 15, 30, 0.7), rgba(13, 15, 30, .8)),url('../image/internship.jpg') no-repeat center center;
+    color: white;    
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .4)),url('../image/coding-image.webp') no-repeat center center;
     background-size: cover;
 }
 .container {
@@ -316,8 +381,8 @@ nav .fa{
     outline: none;
     border: 0;
     padding: 15px 25px;
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #FFF;
     font-size: 22px;
     position: relative;
     transition: all .3s ease-in-out;
@@ -695,6 +760,7 @@ nav .fa{
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
+    width: 100%;
 }
 .program-item-column-container {
     display: flex;
@@ -840,13 +906,28 @@ nav .fa{
 }
 
 @media (max-width: 768px) {
+    .ds-flx-c-c {
+        flex-direction: column;
+    }
+    .description-column-img {
+        width: 100%;
+    }
+    .program-item-container {
+        overflow-y: scroll;
+    }
+    .program-items-row {
+        width: max-content;
+    }
     .program-item-column {
-        width: 50%;
+        width: 300px;
         flex-direction: column;
         padding: 10px 5px;
     }
     .program-item-text-row a {
         padding-block: 10px;
+    }
+    .program-item-text-row .program-name-overlay {
+        top: 180px;
     }
 }
 .get-in-touch {
@@ -899,7 +980,7 @@ nav .fa{
     font-size: 18px;
 }
 .get-in-touch-form-input input:focus-visible {
-    border: 1px solid rgba(13, 186, 75, 1);
+    border: 1px solid #FF4400;
 }
 .get-in-touch-form-input select {
     width: 100%;
@@ -920,8 +1001,8 @@ nav .fa{
     font-size: 14px;
     line-height: 1em;
     font-weight: 600;
-    background-color: rgba(13, 186, 75, 1);
-    border: 1px solid rgba(13, 186, 75, 1);
+    background-color: #FF4400;
+    border: 1px solid #FF4400;
 }
 .get-in-touch-form-input button:hover {
     cursor: pointer;
