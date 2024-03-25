@@ -25,13 +25,8 @@ try {
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-<<<<<<< HEAD:src/send_email.php
-    $mail->setFrom('rebison2@gmail.com','Server');
-    $mail->addAddress('rebison85@gmail.com');    //Add a recipient
-=======
     // $mail->setFrom('rebison2@gmail.com','Server');
     // $mail->addAddress('rebison85@gmail.com');    //Add a recipient
->>>>>>> 88067bf06f99174daa02999393b61a0654b782ab:send_email.php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST['name'];
@@ -43,15 +38,6 @@ try {
         // Email details
         // $to = 'your_email@example.com';
         $subject = 'New Contact Form Submission';
-<<<<<<< HEAD:src/send_email.php
-        $message = "<b>Name:</b> $name\n";
-        $message .= "<b>Email:</b> $email\n";
-        $message .= "<b>Phone:</b> $phone\n";
-        $message .= "<b>Qualification:</b> $qualification\n";
-        $message .= "<b>Profile:</b> $profile\n";
-        $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'New Contact Enquiry';
-=======
         $message = "<b>Name:</b> $name<br>";
         $message .= "<b>Email:</b> $email<br>";
         $message .= "<b>Phone:</b> $phone<br>";
@@ -61,7 +47,6 @@ try {
         $mail->Subject = 'New Contact Enquiry';
         $mail->addAddress($email);
         $mail->addBCC('rebison536@gmail.com');
->>>>>>> 88067bf06f99174daa02999393b61a0654b782ab:send_email.php
         $mail->Body    =  $message;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
@@ -78,9 +63,4 @@ try {
     }
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-<<<<<<< HEAD:src/send_email.php
 }
-?>
-=======
-}
->>>>>>> 88067bf06f99174daa02999393b61a0654b782ab:send_email.php
