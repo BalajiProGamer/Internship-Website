@@ -376,6 +376,7 @@ nav .fa{
 }
 .container-column .btn {
     display: inline-block;
+    margin-left: 20px;
 }
 .container-column .btn button {
     outline: none;
@@ -466,7 +467,7 @@ nav .fa{
     flex-direction: column;
     font-family: "Roboto", sans-serif;
     text-align: left;
-    background-color: #f9f9f9;
+    background-color: #fff;
     color: #333; /* Dark gray font color */
     padding: 20px;
     border-radius: 10px;
@@ -724,6 +725,7 @@ nav .fa{
     border-bottom: 2px solid #f06901;
     background-color: transparent;
     box-shadow: 0px 35px 115px -25px rgba(0,0,0,0.15);
+    transition: all .5s ease-in-out; 
 }
 .overlay {
     position: absolute;
@@ -732,6 +734,7 @@ nav .fa{
     z-index: 5;
     background-color: #f06901;
     opacity: 0;
+    transition: all .5s ease-in-out; 
     bottom: -100%;
 }
 .program-item-padding-10:hover .overlay, .default-overlay {
@@ -744,8 +747,8 @@ nav .fa{
     height: 100%;
     width: 100%;
     padding: 0;
-    filter: contrast(55%);
-    transition: all 0.3s ease-in-out; 
+    transition: all .5s ease-in-out; 
+    filter: contrast(75%);
     /* height: 100%; */
     object-fit: cover;
 }
@@ -805,9 +808,9 @@ nav .fa{
 .program-item-text-row
 .program-name-overlay {
     top: 0;
-
 }
-.program-item-text-row .program-paragraph p {
+.program-item-text-row 
+.program-paragraph p {
     position: relative;
     display: block;
     color: rgba(110,110,110,1);
@@ -821,7 +824,7 @@ nav .fa{
     overflow: hidden;
 }
 .program-paragraph-overlay {
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
     color: #eff0f4;
     position: absolute;
     width: 100%;
@@ -831,13 +834,14 @@ nav .fa{
     right: -100%;
     top: 0;
 }
-.program-item-padding-10:hover .program-paragraph-overlay {
+.program-item-padding-10:hover 
+.program-paragraph-overlay {
     right: 0;
 }
 .program-item-padding-10:hover img {
     scale: 5;
     transform-origin: left top;
-    filter: blur(10px) saturate(10%);
+    /* filter: blur(10px); */
 }
 .program-item-text-row p.program-name {
     color: #fff;
@@ -846,6 +850,7 @@ nav .fa{
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
+    transition: all .5s ease-in-out;
     visibility: hidden;
 }
 .link-invisible {
@@ -860,11 +865,13 @@ nav .fa{
     position: absolute;
     display: inline-block;
     right: 0;
+    transition: all .5s ease-in-out;
     left: 0;
     visibility: visible;
     bottom: -100%;
 }
-.program-item-padding-10:hover .link-overlay {
+.program-item-padding-10:hover 
+.link-overlay {
     bottom: 0;
 }
 .program-item-text-row a {
@@ -875,14 +882,14 @@ nav .fa{
     color: #FFF;
     letter-spacing: 1px;
     border-radius: 3px;
-    transition: all .3s ease-in-out;
+    transition: all .71s ease-in-out;
 }
 .program-item-text-row a::after {
     content: "\f061";
     margin-left: 10px;
     opacity: 0;
     font-weight: 900;
-    transition: all .3s ease-in-out;
+    transition: all .71s ease-in-out;
     font-family: "Font Awesome 6 Free";
 }
 .program-item-text-row a:hover::after {
@@ -890,7 +897,7 @@ nav .fa{
 }
 .program-item-text-row a::before {
     content: '';
-    transition: all .3s ease;
+    transition: all .71s ease;
     position: absolute;
     display: block;
     margin: auto;
@@ -914,6 +921,14 @@ nav .fa{
     }
     .program-item-container {
         overflow-y: scroll;
+    }
+    .program-item-container::-webkit-scrollbar {
+        height: 5px;
+    }
+    .program-item-container::-webkit-scrollbar-thumb {
+        border-radius: 2.5px;
+        background-color: #f44336;
+
     }
     .program-items-row {
         width: max-content;
@@ -1006,6 +1021,14 @@ nav .fa{
 }
 .get-in-touch-form-input button:hover {
     cursor: pointer;
+}
+@media (max-width: 768px) {
+    .get-in-touch-heading h2 {
+        font-size: 24px;
+    }
+    .get-in-touch-sub-container {
+        width: 75%;
+    }
 }
 .awards {
     width: 100%;

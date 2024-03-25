@@ -10,9 +10,20 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   />
+<style>
+#loader {
+	display: none;
+    color: #ff4400;
+}
+#submitBtn:disabled {
+    background-color: #ff9273; 
+    color: #fefefe; 
+    cursor: not-allowed; 
+}
+</style>
 </head>
 <body>
-    <section>
+    <section id="home">
         <header>
             <nav>
                 <a class="nav-img" href="index.html">
@@ -23,26 +34,25 @@
                 </a>
                 <div class="nav-links" id="navlinks">
                     <div class="navlinks-flex">
-
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <div class="menu-bar">
-                        <ul>
-                            <li><a href="index.html" class="active"> HOME</a></li>
-                            <li><a href="about.html"> ABOUT</a></li>
-                            <li><a href="course.html"> COURSE</a></li>
-                            <li><a href="#"> QUICK-LINKS</a>
-                                <div class="sub-menu-1">
-                                    <ul>
-                                        <a href="#"><li>Link 1</li></a>
-                                        <a href="#"><li>Link 1</li></a>
-                                        <a href="#"><li>Link 1</li></a>                                        
-                                    </ul>
-                                </div>
-                            </li>                            
-                        </ul>
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <div class="menu-bar">
+                            <ul>
+                                <li><a class="smoothScroll" href="#home"> HOME</a></li>
+                                <li><a class="smoothScroll" href="#about"> ABOUT</a></li>
+                                <li><a class="smoothScroll" href="#course"> COURSE</a></li>
+                                <li><a class="smoothScroll" href="#contact"> CONTACT</a></li>
+                                <!-- <li><a href="#"> QUICK-LINKS</a>
+                                    <div class="sub-menu-1">
+                                        <ul>
+                                            <a href="#"><li></li></a>
+                                            <a href="#"><li>Link 1</li></a>
+                                            <a href="#"><li>Link 1</li></a>                                        
+                                        </ul>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
                     </div>
-                    </div>
-
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
@@ -50,22 +60,12 @@
         <div class="main-container">
             <div class="container">
                 <div class="container-row">
-                    <div class="container-column">
-                        <!-- <div class="container-column-image">
-                            <img src="image/frame-109288-1-1-300.webp" alt="" srcset="">
-                        </div> -->
+                    <div class="container-column">                    
                         <div class="container-column-title">
                             <h1>Internship Programme</h1>
                         </div>
                         <div class="container-column-list">
-                            <p>Join Newrains for a Transformative Internship Experience</p>
-                            <!-- <ul>
-                                <li>One Month Offline Internship.</li>
-                                <li>Experienced Mentors.</li>
-                                <li>Discount on group Registration.</li>
-                                <li>Daily Mock test.</li>
-                                <li>Certificates upon completion.</li>
-                            </ul> -->
+                            <p>Join Newrains for a Transformative Internship Experience</p>         
                         </div>
                         <div class="container-column-text">
                             <strong>Offline Classes available in English, தமிழ்</strong>
@@ -74,7 +74,7 @@
                             <button type="button">Learn More <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
-                    <!-- <div class="container-column-2">
+                    <div class="container-column-2">
                         <div class="container-column-list-2">                            
                             <ul>
                                 <li><i class="fa-solid fa-check"></i>One Month Offline Internship.</li>
@@ -84,19 +84,16 @@
                                 <li><i class="fa-solid fa-check"></i>Certificates upon completion.</li>
                             </ul>
                         </div>     
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="description">
             <div class="description-container">
-                <div class="description-row">
-                    <!-- <div class="description-image">
-                        <img src="image/logo_newrains.png" alt="" srcset="">
-                    </div> -->
+                <div class="description-row">          
                     <div class="ds-flx-c-c">
                         <div class="description-column-text">
                             <h4>About <span>Newrains</span></h4>
@@ -108,7 +105,7 @@
                                 opportunities to extend their research in the other parts of the world. The
                                 organisation motivates the young researchers to interact with renowned
                                 scientists, Nobel laurates and intellectuals and enhance their knowledge
-                                and strengthen their research.NEW RAINS will reach the international
+                                and strengthen their research. NEW RAINS will reach the international
                                 readers through its books authored by its members, young authors and
                                 other experts in the field of science, Engineering, technology, medicine,
                                 applied sciences including mathematics, physics, chemistry and social
@@ -121,11 +118,6 @@
                     </div>
                 </div>
                 <div class="description-row">
-
-
-                    <!-- <div class="description-image">
-                        <img src="image/logo_tetron.png" alt="" srcset="">
-                    </div> -->
                     <div class="ds-flx-c-c">
                         <div class="description-column-img">
                             <img src="image/1-11959.webp" alt="" srcset="">
@@ -140,15 +132,14 @@
                                 needs are met with precision. Join us on this transformative journey as
                                 we harness the power of technology to reshape industries and unlock
                                 new horizons. Tetron - Where IT potential meets limitless solutions</p>                        
-                        </div>
-                        
+                        </div>                        
                     </div>  
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="programs">
+    <section class="programs" id="course">
         <div class="program-heading-contianer">
             <div class="program-heading">
                 <h2>Our Courses</h2>
@@ -166,11 +157,7 @@
                                 <div class="overlay"></div>
                                 <img src="image/network-engineer.jpg" alt="" srcset="">
                                 <div class="program-item-inside">
-
                                     <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG2.jpeg" alt="" srcset="">
-                                        </div> -->
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -180,14 +167,12 @@
                                                         <p>Master the intricacies of network engineering, from design to deployment, and become a sought-after IT infrastructure expert.</p>
                                                         <div class="program-paragraph-overlay">Master the intricacies of network engineering, from design to deployment, and become a sought-after IT infrastructure expert.</div>
                                                     </div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Network Engineering</p> -->
                                                     <div class="link-invisible">
                                                         <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                         <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -196,24 +181,15 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
-                        </div>                        
-
-
+                        </div>     
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/cyber-security.jpg" alt="" srcset="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG3.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                      
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -223,14 +199,12 @@
                                                     <p>Become a cyber security expert, safeguarding digital assets and thwarting cyber threats with our comprehensive training program.</p>
                                                     <div class="program-paragraph-overlay">Become a cyber security expert, safeguarding digital assets and thwarting cyber threats with our comprehensive training program.</div>
                                                     </div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Cyber Security</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -238,27 +212,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
-                        
-                        
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/full-stack-development.png" alt="" srcset="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG4.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                    
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -267,7 +230,6 @@
                                                     <div class="program-paragraph">
                                                     <p>Embark on a journey to master Full Stack Development, gaining proficiency in both front-end and back-end technologies to build dynamic and scalable web applications.</p>
                                                     <div class="program-paragraph-overlay">Embark on a journey to master Full Stack Development, gaining proficiency in both front-end and back-end technologies to build dynamic and scalable web applications.</div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -275,7 +237,6 @@
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Full Stack Development</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -283,26 +244,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
-                        
-
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/python.jpg" alt="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG5.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                     
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -312,14 +263,12 @@
                                                     <p>Discover the power of Python programming with our comprehensive introductory course, paving the way for versatile applications in software development and data analysis.</p>
                                                     <div class="program-paragraph-overlay">Discover the power of Python programming with our comprehensive introductory course, paving the way for versatile applications in software development and data analysis.</div>
                                                     </div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Introduction to Python</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -328,25 +277,17 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
-                        </div>
-                        
+                        </div>                        
                     </div>
                     <div class="program-items-row">
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/data-science.jpeg" alt="" srcset="">
                                 <div class="program-item-inside">
-                                    
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG6.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                     
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -355,7 +296,6 @@
                                                     <div class="program-paragraph">
                                                     <p>Data science is the interdisciplinary field that extracts insights and knowledge from data to drive informed decision-making and solve complex problems.</p>
                                                     <div class="program-paragraph-overlay">Data science is the interdisciplinary field that extracts insights and knowledge from data to drive informed decision-making and solve complex problems.</div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -373,21 +313,13 @@
                                     </div>
                                 </div>
                             </div>
-
-                        </div>                        
-
-
+                        </div>
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/design.jpg" alt="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG7.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                     
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -396,17 +328,13 @@
                                                     <div class="program-paragraph">                                                    
                                                     <p>Explore the fundamentals of design theory and practice, laying the foundation for creative expression and problem-solving in our Introduction to Designing course.</p>
                                                     <div class="program-paragraph-overlay">Explore the fundamentals of design theory and practice, laying the foundation for creative expression and problem-solving in our Introduction to Designing course.</div>                                                    
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="program-item-column-title">
-
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Full Stack Development</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -415,26 +343,16 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
-                        
-                        
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/digital-marketing.jpg" alt="" srcset="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG8.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                       
                                         <div class="program-item-column-title">
-
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
                                                     <p class="program-name">Introduction to Digital Marketing</p>
@@ -442,16 +360,13 @@
                                                     <div class="program-paragraph">
                                                     <p>Gain a comprehensive understanding of digital marketing strategies and techniques to effectively reach and engage audiences in our Introduction to Digital Marketing course.</p>
                                                     <div class="program-paragraph-overlay">Gain a comprehensive understanding of digital marketing strategies and techniques to effectively reach and engage audiences in our Introduction to Digital Marketing course</div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="program-item-column-title">
-
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Full Stack Development</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -459,26 +374,17 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>  
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/it-support.jpg" alt="" srcset="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG9.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                      
                                         <div class="program-item-column-title">
-
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
                                                     <p class="program-name">Introduction to IT Support</p>
@@ -486,16 +392,13 @@
                                                     <div class="program-paragraph">
                                                     <p>Become proficient in troubleshooting and maintaining IT systems, providing essential technical assistance to users, in our IT Support course.</p>
                                                     <div class="program-paragraph-overlay">Become proficient in troubleshooting and maintaining IT systems, providing essential technical assistance to users, in our IT Support course.</div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="program-item-column-title">
-
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Full Stack Development</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -503,27 +406,18 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-
-                        </div>                     
-                        
+                        </div>
                     </div>
                     <div class="program-items-row">
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/cloud-computing.jpg" alt="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG10.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                   
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -532,7 +426,6 @@
                                                     <div class="program-paragraph">
                                                     <p>Unlock the power of cloud computing, mastering scalable and flexible infrastructure solutions, in our Cloud Computing course.</p>
                                                     <div class="program-paragraph-overlay">Unlock the power of cloud computing, mastering scalable and flexible infrastructure solutions, in our Cloud Computing course.</div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -540,7 +433,6 @@
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Full Stack Development</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -548,26 +440,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-
-                        </div>                        
-
-
+                        </div>
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/linux-server.jpg" alt="" srcset="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG11.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                                  
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -577,14 +459,12 @@
                                                     <p>Master Linux and server administration, empowering yourself with the skills to deploy, manage, and optimize robust server infrastructures, in our Linux and Server course.</p>
                                                     <div class="program-paragraph-overlay">Master Linux and server administration, empowering yourself with the skills to deploy, manage, and optimize robust server infrastructures, in our Linux and Server course.</div>
                                                     </div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Cyber Security</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -592,26 +472,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
-                        
-                        
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/computer-hardware.png" alt="" srcset="">
                                 <div class="program-item-inside">
-
-                                    <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG12.jpeg" alt="" srcset="">
-                                        </div> -->
+                                    <div class="program-item-column-container">                              
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -621,14 +491,12 @@
                                                     <p>Explore the intricacies of computer hardware, from components to configurations, and develop the expertise to troubleshoot and optimize systems effectively, in our Computer Hardware course.</p>
                                                     <div class="program-paragraph-overlay">Explore the intricacies of computer hardware, from components to configurations, and develop the expertise to troubleshoot and optimize systems effectively, in our Computer Hardware course.</div>
                                                     </div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Cyber Security</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -636,24 +504,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>  
                         <div class="program-item-column">
-
                             <div class="program-item-padding-10">
                                 <div class="overlay"></div>
                                 <img src="image/ux-ui-interface.jpg" alt="">
                                 <div class="program-item-inside">
-
                                     <div class="program-item-column-container">
-                                        <!-- <div class="program-item-column-image">
-                                            <img src="image/OIG14.jpeg" alt="" srcset="">
-                                        </div> -->
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
@@ -662,7 +522,6 @@
                                                     <div class="program-paragraph">
                                                     <p>Delve into the world of UX/UI design, crafting intuitive and visually appealing digital experiences that resonate with users, in our UX/UI Design course.</p>
                                                     <div class="program-paragraph-overlay">Delve into the world of UX/UI design, crafting intuitive and visually appealing digital experiences that resonate with users, in our UX/UI Design course.</div>
-                                                    <!-- <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -670,7 +529,6 @@
                                         <div class="program-item-column-title">
                                             <div class="program-item-text-container">
                                                 <div class="program-item-text-row">
-                                                    <!-- <p>Full Stack Development</p> -->
                                                     <div class="link-invisible">
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" target="_blank">KNOW MORE</a>
                                                     <a href="https://forms.gle/VH9tyxLSQBy9h4LH9" class="link-overlay" target="_blank">KNOW MORE</a>
@@ -678,20 +536,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-
-                        </div>                     
-                        
+                        </div>
                     </div> 
                 </div>
             </div>
         </div>
     </section>
-    <section class="get-in-touch">
+    <section class="get-in-touch" id="contact">
         <div class="get-in-touch-container">
             <div class="get-in-touch-sub-container">
                 <div class="get-in-touch-heading-container">
@@ -706,7 +560,7 @@
                                 <div class="get-in-touch-form-column">
                                     <div class="get-in-touch-form-input-container">
                                         <label for="name">
-                                            Name*
+                                            Full Name*
                                         </label>
                                         <div class="get-in-touch-form-input">
                                             <input type="text" name="name" id="name" required>
@@ -736,53 +590,55 @@
 
                                 <div class="get-in-touch-form-column">
                                     <div class="get-in-touch-form-input-container">
-                                        <label for="qualification">
-                                            Educational Qualification*
+                                        <label for="interested_domain">
+                                            Interested Domain*
                                         </label>
                                         <div class="get-in-touch-form-input">
-                                            <select name="qualification" id="qualification">
+                                            <select name="interested_domain" id="interested_domain">
                                                 <option value="select" disabled="disabled" selected="selected">Select</option>
-                                                <option value="B.A">B.A</option>
-                                                <option value="B.Sc">B.Sc</option>
-                                                <option value="B.Com">B.Com</option>
-                                                <option value="B.B.A">B.B.A</option>
+                                                <option value="Network Engineering">Network Engineering</option>
+                                                <option value="Cyber Security">Cyber Security</option>
+                                                <option value="Full Stack Development">Full Stack Development</option>
+                                                <option value="Introduction to Python">Introduction to Python</option>
+                                                <option value="Introduction to Data Science">Introduction to Data Science</option>
+                                                <option value="Introduction to Designing">Introduction to Designing</option>
+                                                <option value="Introduction to Digital Marketing">Introduction to Digital Marketing</option>
+                                                <option value="Introduction to IT Support">Introduction to IT Support</option>
+                                                <option value="Mastery on Cloud Computing">Mastery on Cloud Computing</option>
+                                                <option value="Mastery on Linux and Servers">Mastery on Linux and Servers</option>
+                                                <option value="Mastery on Computer Hardwares">Mastery on Computer Hardwares</option>
+                                                <option value="Mastery on UI/UX">Mastery on UI/UX</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="get-in-touch-form-column">
                                     <div class="get-in-touch-form-input-container">
-                                        <label for="profile">
-                                            Current Profile*
+                                        <label for="position">
+                                            Current Position*
                                         </label>
                                         <div class="get-in-touch-form-input">
-<<<<<<< HEAD:src/index.html
-                                            <select name="select" id="profile">
-=======
-                                            <select name="profile" id="profile">
->>>>>>> 88067bf06f99174daa02999393b61a0654b782ab:index.html
+                                            <select name="position" id="position">
                                                 <option value="select" disabled="disabled" selected="selected">Select</option>
                                                 <option value="Student">Student</option>
                                                 <option value="Working in the IT Industry">Working in the IT Industry</option>
                                                 <option value="Working in the Non IT Industry">Working in the Non IT Industry</option>
                                                 <option value="Looking for the career in the IT Idustry">Looking for the career in the IT Industry</option>
+                                                <option value="Other">Other</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="get-in-touch-form-column">
 
                                     <div class="get-in-touch-form-input-container">                                        
                                         <div class="get-in-touch-form-input">
-                                            <button type="submit" name="submit" id="submit">Submit</button>
+                                            <button type="submit" name="submit" id="submitBtn">Submit</button>
+		                                    <div id="loader">Sending...</div>
                                         </div>
-                                    </div>
-        
-                                </div>
-                                
-                
+                                    </div>        
+                                </div>                                
+                		        <div id="response"></div>
                             </div>
                         </form>
                     </div>
@@ -799,11 +655,14 @@
             </div>
             <div class="footer-text-container">
                 <div class="footer-text">
-                    <p>Request a Callback. An expert from the admissions office will call you in the next 24 working hours. You can also reach out to us at <span>cs@guvi.in</span> or <span>+91-9736097320</span></p>
+                    <p>Request a Callback. An expert from the admissions office will call you in the next 24 working hours. You can also reach out to us at <span><a href="mailto:info@newrains.com" style="color: white;">info@newrains.com</a></span> or <span><a href="tel:+918838702557" style="color: white;">+91-8838702557</a></span></p>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="jQuery/jquery.min.js"></script>
+    <script src="jQuery/jquery.backtotop.js"></script>
+    <script src="untitled.js"></script>
     <script type="text/javascript">
         var navlinks=document.getElementById('navlinks');
         var close=document.getElementById('close');
@@ -832,70 +691,39 @@
             prevScrollpos = currentScrollPos;
         };
    </script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <script src="jquery.min.js"></script> -->
+    <script src="jquery.min.js"></script>
     <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  -->
     <script>
-    //     function submitData(){
-	// 	$(document).ready(function(){
-	// 		var formData = new FormData();
-	// 		var files = $('#fileImg')[0].files;
-	// 		formData.append('fileImg', files[0]);
-
-	// 		$.ajax({
-	// 			url: 'send.php',
-	// 			type: 'post',
-	// 			data: formData,
-	// 			contentType: false,
-	// 			processData: false,
-	// 			success:function(response){
-	// 				if(response == "Success"){
-	// 					alert("Successfully Added");
-	// 				}
-	// 				else if(response == "Invalid"){
-	// 					alert("Invalid Extension!");
-	// 				}
-	// 				else{
-	// 					alert("Please Fill the form");
-	// 				}
-	// 			}
-	// 		});
-	// 	});
-	// }
 
     $(document).ready(function(){
             $('#contactForm').submit(function(e){
                 e.preventDefault();
+                $('#submitBtn').prop('disabled', true); // Disable the submit button
+                $('#loader').show(); // Show the loading animation
+                
                 $.ajax({
                     type: 'POST',
                     url: $(this).attr('action'),
                     data: $(this).serialize(),
                     success: function(response){
-                        $('#response').html(response);
+                        if(response == "Success"){
+                            alert("Mail Successfully Sent");
+                        }
+                        else if(response == "Invalid"){
+                            alert("Invalid!");
+                        }
+                        else{
+                            alert("Please Fill the form");
+                        }
+	                    $('#contactForm')[0].reset(); // Reset the form
+                    },
+                    complete: function(){
+                        $('#submitBtn').prop('disabled', false); // Enable the submit button
+                        $('#loader').hide(); // Hide the loading animation
                     }
                 });
             });
-        });
-    </script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 0,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
         });
     </script>
 </body>
