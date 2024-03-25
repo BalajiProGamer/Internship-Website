@@ -841,7 +841,7 @@ nav .fa{
 
 @media (max-width: 768px) {
     .program-item-column {
-        width: 50%;
+        width: 100%;
         flex-direction: column;
         padding: 10px 5px;
     }
