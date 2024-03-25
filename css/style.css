@@ -1279,7 +1279,7 @@ nav .fa{
 }
 .footer {
     width: 100%;
-    padding: 34px 0 44px;
+    padding: 24px 0;
     background-color: #f06901;
     text-align: center;
     margin: 0 auto;
@@ -1301,4 +1301,17 @@ nav .fa{
 .footer-text>p>span {
     text-decoration: underline;
     font-weight: 700;
+}
+.footer-brand {
+    background-color: black; 
+    color: #fefefe;
+}
+.footer-brand-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-brand-cpyrts-width {
+    width: 44.11%!important;
 }
