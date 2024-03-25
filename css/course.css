@@ -266,7 +266,7 @@ nav .fa{
     margin: 0 auto;
     padding: 60px 15px;
     color: white;    
-    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .8)),url('../image/coding-image.webp') no-repeat center center;
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .4)),url('../image/coding-image.webp') no-repeat center center;
     background-size: cover;
 }
 .container {
@@ -435,35 +435,12 @@ nav .fa{
         line-height: 38px;
         color: rgba(255,255,255,1);
         font-size: 36px;
-        margin-top: 80px;
-    }
-    .container-column-list>p {
-        padding: 10px;
-        font-size: 18px;
-    }
-    .container-column-text strong {
-        font-size: 16px;
     }
     .container-column-full-image {
         width: 100%;
     }
     .container-column {
         width: 100%;
-    }
-    .container-column .btn button {
-        padding: 10px 15px;
-    }
-    .container-column-list-2 {
-        padding: 10px;
-    }
-    .container-column-2 {
-        width: 100%;
-    }
-    .container-column-list-2>ul {
-        padding-left: 10px;
-    }
-    .container-column-list-2>ul li {
-        font-size: 18px;
     }
 }
 @media (max-width: 768px) {
