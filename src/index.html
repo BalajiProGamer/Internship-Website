@@ -691,7 +691,101 @@
             </div>
         </div>
     </section>
+    <section class="get-in-touch">
+        <div class="get-in-touch-container">
+            <div class="get-in-touch-sub-container">
+                <div class="get-in-touch-heading-container">
+                    <div class="get-in-touch-heading">
+                        <h2>Doesn't Know Which Program to choose? Talk to our Experts</h2>
+                    </div>
+                </div>
+                <div class="get-in-touch-form-container">
+                    <div class="get-in-touch-form">
+                        <form id="contactForm" action="send_email.php" method="POST">
+                            <div class="get-in-touch-form-row">
+                                <div class="get-in-touch-form-column">
+                                    <div class="get-in-touch-form-input-container">
+                                        <label for="name">
+                                            Name*
+                                        </label>
+                                        <div class="get-in-touch-form-input">
+                                            <input type="text" name="name" id="name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="get-in-touch-form-column">
+                                    <div class="get-in-touch-form-input-container">
+                                        <label for="email">
+                                            Email*
+                                        </label>
+                                        <div class="get-in-touch-form-input">
+                                            <input type="email" name="email" id="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="get-in-touch-form-column">
+                                    <div class="get-in-touch-form-input-container">
+                                        <label for="phone">
+                                            Phone*
+                                        </label>
+                                        <div class="get-in-touch-form-input">
+                                            <input type="text" name="phone" id="phone" required>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="get-in-touch-form-column">
+                                    <div class="get-in-touch-form-input-container">
+                                        <label for="qualification">
+                                            Educational Qualification*
+                                        </label>
+                                        <div class="get-in-touch-form-input">
+                                            <select name="qualification" id="qualification">
+                                                <option value="select" disabled="disabled" selected="selected">Select</option>
+                                                <option value="B.A">B.A</option>
+                                                <option value="B.Sc">B.Sc</option>
+                                                <option value="B.Com">B.Com</option>
+                                                <option value="B.B.A">B.B.A</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="get-in-touch-form-column">
+                                    <div class="get-in-touch-form-input-container">
+                                        <label for="profile">
+                                            Current Profile*
+                                        </label>
+                                        <div class="get-in-touch-form-input">
+                                            <select name="select" id="profile">
+                                                <option value="select" disabled="disabled" selected="selected">Select</option>
+                                                <option value="Student">Student</option>
+                                                <option value="Working in the IT Industry">Working in the IT Industry</option>
+                                                <option value="Working in the Non IT Industry">Working in the Non IT Industry</option>
+                                                <option value="Looking for the career in the IT Idustry">Looking for the career in the IT Industry</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="get-in-touch-form-column">
+
+                                    <div class="get-in-touch-form-input-container">                                        
+                                        <div class="get-in-touch-form-input">
+                                            <button type="submit" name="submit" id="submit">Submit</button>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                
+                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-heading-container">
@@ -706,6 +800,18 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        var navlinks=document.getElementById('navlinks');
+        var close=document.getElementById('close');
+        function showMenu() {
+            navlinks.style.right="0";
+            close.style.display="block";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+            close.style.display="none";
+        }
+    </script>
     <script>
         var prevScrollpos = window.pageYOffset;
 
@@ -725,35 +831,49 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="jquery.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  -->
     <script>
-        function submitData(){
-		$(document).ready(function(){
-			var formData = new FormData();
-			var files = $('#fileImg')[0].files;
-			formData.append('fileImg', files[0]);
+    //     function submitData(){
+	// 	$(document).ready(function(){
+	// 		var formData = new FormData();
+	// 		var files = $('#fileImg')[0].files;
+	// 		formData.append('fileImg', files[0]);
 
-			$.ajax({
-				url: 'send.php',
-				type: 'post',
-				data: formData,
-				contentType: false,
-				processData: false,
-				success:function(response){
-					if(response == "Success"){
-						alert("Successfully Added");
-					}
-					else if(response == "Invalid"){
-						alert("Invalid Extension!");
-					}
-					else{
-						alert("Please Fill the form");
-					}
-				}
-			});
-		});
-	}
-    </script> -->
+	// 		$.ajax({
+	// 			url: 'send.php',
+	// 			type: 'post',
+	// 			data: formData,
+	// 			contentType: false,
+	// 			processData: false,
+	// 			success:function(response){
+	// 				if(response == "Success"){
+	// 					alert("Successfully Added");
+	// 				}
+	// 				else if(response == "Invalid"){
+	// 					alert("Invalid Extension!");
+	// 				}
+	// 				else{
+	// 					alert("Please Fill the form");
+	// 				}
+	// 			}
+	// 		});
+	// 	});
+	// }
+
+    $(document).ready(function(){
+            $('#contactForm').submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: $(this).attr('action'),
+                    data: $(this).serialize(),
+                    success: function(response){
+                        $('#response').html(response);
+                    }
+                });
+            });
+        });
+    </script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
