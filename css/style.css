@@ -364,10 +364,12 @@ nav .fa{
 .container-column .btn {
     display: inline-block;
     margin-left: 20px;
+    margin-top: 10px;
 }
-.container-column .btn button {
+.container-column .btn a {
     outline: none;
-    border: 0;
+    text-decoration: none;
+    /* border: 0; */
     padding: 15px 25px;
     color: #000;
     background-color: #FFF;
@@ -375,20 +377,20 @@ nav .fa{
     position: relative;
     transition: all .3s ease-in-out;
 }
-.container-column .btn button .fa-arrow-right {
+.container-column .btn a .fa-arrow-right {
     opacity: 0;
     margin-left: -15px;
 }
-.container-column .btn button:hover {
+.container-column .btn a:hover {
     cursor: pointer;
     background-color: #FFF;
     color: #000;
 }
-.container-column .btn button:hover .fa-arrow-right {
+.container-column .btn a:hover .fa-arrow-right {
     opacity: 1;
     margin-left: 10px;
 }
-.container-column .btn button::before {
+.container-column .btn a::before {
     transition: all .3s ease-in-out;
     content: '';
     display: block;
@@ -400,10 +402,10 @@ nav .fa{
     bottom: 0;
     position: absolute;
 }
-.container-column .btn button:hover:before {
+.container-column .btn a:hover:before {
     width: 100%;
 }
-/* .container-column .btn button::after {
+/* .container-column .btn a::after {
     transition: all .3s ease-in-out;
     content: '\f061';
     font-family: "Font Awesome 6 Free";
@@ -413,7 +415,7 @@ nav .fa{
     float: right;
     position: absolute;
 }
-.container-column .btn button:hover::after {
+.container-column .btn a:hover::after {
     opacity: 1;
     margin-left: 15px;
 } */
@@ -437,7 +439,7 @@ nav .fa{
     .container-column {
         width: 100%;
     }
-    .container-column .btn button {
+    .container-column .btn a {
         padding: 10px 15px;
     }
     .container-column-list-2 {
@@ -774,6 +776,7 @@ nav .fa{
     align-items: stretch;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-evenly;
 }
 .program-item-column-container {
     display: flex;
@@ -818,6 +821,7 @@ nav .fa{
 .program-item-text-row
 .program-name-overlay {
     top: 0;
+    text-shadow: 0 0 transparent;
 }
 .program-item-text-row 
 .program-paragraph p {
@@ -860,7 +864,7 @@ nav .fa{
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
     visibility: hidden;
 }
 .link-invisible {
@@ -892,7 +896,7 @@ nav .fa{
     color: #FFF;
     letter-spacing: 1px;
     border-radius: 3px;
-    transition: all .71s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 .program-item-text-row a::after {
     content: "\f061";
@@ -929,9 +933,9 @@ nav .fa{
     .description-column-img {
         width: 100%;
     }
-    .program-item-container {
-        overflow-y: scroll;
-    }
+    /* .program-item-container {
+        overflow-y: auto;
+    } */
     .program-item-container::-webkit-scrollbar {
         height: 5px;
     }
@@ -940,11 +944,12 @@ nav .fa{
         background-color: #f44336;
 
     }
-    .program-items-row {
+    /* .program-items-row {
         width: max-content;
-    }
+    } */
     .program-item-column {
         width: 300px;
+        height: 250px;
         flex-direction: column;
         padding: 10px 5px;
     }

@@ -71,7 +71,7 @@
                             <strong>Offline Classes available in English, தமிழ்</strong>
                         </div>
                         <div class="btn">
-                            <button type="button">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                            <a href="">Register Now <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="container-column-2">
@@ -594,7 +594,7 @@
                                             Interested Domain*
                                         </label>
                                         <div class="get-in-touch-form-input">
-                                            <select name="interested_domain" id="interested_domain" required>
+                                            <select name="interested_domain" id="interested_domain" required="true">
                                                 <option value="select" disabled="disabled" selected="selected">Select</option>
                                                 <option value="Network Engineering">Network Engineering</option>
                                                 <option value="Cyber Security">Cyber Security</option>
@@ -719,13 +719,13 @@
                     data: $(this).serialize(),
                     success: function(response){
                         if(response == "Success"){
-                            alert("Mail Successfully Sent");
+                            alert("Message Sent Successfully...");
                         }
                         else if(response == "Invalid"){
-                            alert("Invalid!");
+                            alert("Invalid!!!");
                         }
                         else{
-                            alert("Please Fill the form");
+                            alert("Please try again later...");
                         }
 	                    $('#contactForm')[0].reset(); // Reset the form
                     },
