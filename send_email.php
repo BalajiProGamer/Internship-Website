@@ -24,10 +24,6 @@ try {
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    //Recipients
-    // $mail->setFrom('rebison2@gmail.com','Server');
-    // $mail->addAddress('rebison85@gmail.com');    //Add a recipient
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -36,7 +32,6 @@ try {
         $position = $_POST['position'];
 
         // Email details
-        // $to = 'your_email@example.com';
         $subject = 'New Contact Form Submission';
         $message = "<b>Name:</b> $name<br>";
         $message .= "<b>Email:</b> $email<br>";
