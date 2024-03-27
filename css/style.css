@@ -873,7 +873,8 @@ nav .fa{
     text-align: right;
     float: right;
     display: inline;
-    width: fit-content;
+    width: min-content;
+    white-space: nowrap;
 }
 .link-overlay {
     position: absolute;
