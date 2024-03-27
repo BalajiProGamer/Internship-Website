@@ -9,11 +9,6 @@
     font-family: "DM Sans", sans-serif;
     transition: all .3s ease-in-out;
 }
-/* *::before, *::after {
-    content: '';
-    clear: both;
-    box-sizing: border-box;
-} */
 :root {
 	--primary-color: #717275;
 	--background-image: transparent;
@@ -171,8 +166,6 @@ nav .fa{
 		position: relative;
 		width: 160px;
 		height: 80px;
-		/* background: url(image/logo2.png) no-repeat; */
-		/* background-size: cover; */
 	}
 	.hidden{
 		transition: 1.75s;
