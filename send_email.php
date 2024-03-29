@@ -43,7 +43,11 @@ try {
         $mail->addAddress($email);
         $mail->addBCC('rebison2@gmail.com');
         $mail->Body    =  $message;
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        $mail->AltBody = 'Name: ' . $name .'\n'.
+                        'Email: ' . $email .'\n'.
+                        'Phone: ' . $phone . '\n'. 
+                        'Interested Domain: ' . $interested_domain . '\n' . 
+                        'Current Position: ' . $position . '\n';
 
         $mail->send();
         echo 'Success';
