@@ -566,14 +566,19 @@ nav .fa{
 }
 .effective-learning-content>.content-list>.content-list-item p {
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 .assistant {
     width: 100%;
     background-color: #070a15;
 }
 .assistant-content h4 {
-    color: #fff;
+    color: #673AB7;
+    color: rgb(161, 0, 255);
+    background: linear-gradient(45deg, #9C27B0, #FF5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     /* color: #f3f6f8; */
     font-size: 64px;
     font-weight: 700;
@@ -592,12 +597,112 @@ nav .fa{
 .assistant-content>.content-list>.content-list-item {
     padding: 10px;
     margin-bottom: 40px;
-    background-color: #f06901;
-    border-radius: 10px;
+    border: 1px solid #673AB7;
+    border-color: rgb(161, 0, 255);
+    /* background-color: #f06901; */
+    border-radius: 5px;
 }
 .assistant-content>.content-list>.content-list-item p {
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
+}
+.certificate {
+    /* padding-top: 100px; */
+    background-color: rgb(4, 12, 35);
+}
+.certificate-content h4 {
+    background: linear-gradient(45deg,  rgba(224, 9, 45, 0.8), rgba(4, 9, 245, 0.8));
+    background: linear-gradient(45deg, #9C27B0, #FF5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* color: #f3f6f8; */
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 98.8%;
+}
+.certificate-content h4 span {
+    color: #ff4400;
+    text-decoration: underline;
+}
+.certificate-content p {
+    padding: 24px 0;
+    font-size: 24px;
+    line-height: 140%;
+    color: #eff0f4;
+    /* color: #494b4c; */
+}
+.certificate-content>.content-list, .assistant-content>.content-list {
+    padding: 10px 0;
+}
+.certificate-content>.content-list>.content-list-item {
+    padding: 10px;
+    margin-bottom: 40px;
+    /* background-color: #ff4400; */
+    border-radius: 10px;
+    border: 2px dashed #fff;
+    border-image: linear-gradient(45deg, #9C27B0, #FF5722) 1;
+}
+.certificate-content>.content-list>.content-list-item p {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+.curriculum {
+    /* padding-top: 100px; */
+    background-color: rgb(4, 12, 35);
+}
+.curriculum-content h4 {
+    color: #fff;
+    /* color: #f3f6f8; */
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 98.8%;
+}
+.curriculum-content h4 span {
+    color: #ff4400;
+    text-decoration: underline;
+}
+.curriculum-content p {
+    padding: 24px 0;
+    font-size: 24px;
+    line-height: 140%;
+    color: #eff0f4;
+    /* color: #494b4c; */
+}
+.curriculum-content>.content-list, .assistant-content>.content-list {
+    padding: 10px 0;
+}
+.curriculum-content>.content-list>.content-list-item {
+    padding: 10px;
+    margin-bottom: 0;
+    /* background-color: #ff4400; */
+    border-radius: 10px;
+}
+.curriculum-col>.curriculum-content>h5 {
+    font-size: 42px;
+    color: white;
+    text-underline-offset: 14px;
+    text-decoration: underline;
+    text-decoration-color: #f06901;
+}
+.curriculum-content>.content-list>.content-list-item p {
+    padding: 10px;
+    font-size: 20px;
+}
+.curriculum-col>.curriculum-content>.content-list {
+    padding: 40px 0 0;
+}
+.curriculum-col>.curriculum-content>.content-list>.content-list-item {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #fefefe;
+    border-radius: 10px;
+}
+.curriculum-col>.curriculum-content>.content-list>.content-list-item p {
+    padding: 10px;
+    font-size: 20px;
 }
 .description {
     padding: 64px 0;
