@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
-    transition: all .3s ease-in-out;
+    /* transition: all .3s ease-in-out; */
 }
 /* *::before, *::after {
     content: '';
@@ -268,6 +268,7 @@ nav .fa{
     color: white;    
     background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .4)),url('../image/coding-image.webp') no-repeat center center;
     background-size: cover;
+    overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -285,7 +286,7 @@ nav .fa{
 
 .container-column {
     width: 100%;
-    padding: 0 15px;
+    padding: 15px;
     display: inline-block;
 }
 .container-column-image {
@@ -396,7 +397,6 @@ nav .fa{
     animation: gradient 5s infinite reverse;
     font-size: 22px;
     position: relative;
-    transition: all .3s ease-in-out;
 }
 @keyframes gradient {
     0% {
@@ -412,6 +412,7 @@ nav .fa{
 .container-column .btn button .fa-arrow-right {
     opacity: 0;
     margin-left: -15px;
+    transition: all .3s ease-in-out;
 }
 .container-column .btn button:hover {
     cursor: pointer;
@@ -454,9 +455,19 @@ nav .fa{
 } */
 @media (max-width: 768px) {
     .container-column-title>h1 {
+        padding: 10px 0;
         line-height: 38px;
         color: rgba(255,255,255,1);
         font-size: 36px;
+    }
+    .container-column-list {
+        padding-left: 0;
+    }
+    .container-column-text strong {
+        padding: 10px 0;
+    }
+    .container-column .btn {
+        margin-left: 0;
     }
     .container-column-full-image {
         width: 100%;
@@ -469,6 +480,124 @@ nav .fa{
     .container-row {
         flex-direction: column;
     }
+}
+.light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* pointer-events: none; */
+    /* background: radial-gradient(circle at var(--x) var(--y), transparent, rgba(0,0,0,0.7) 20%); */
+    background-image: radial-gradient(
+        circle farthest-side at var(--x, 100px) var(--y, 100px),
+        rgb(4, 15, 75) 0%,
+        transparent 100%
+      );
+}
+.main-content {
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+    /* background-color: #111927; */
+}
+.main-content-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.main-content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 2%;
+    /* background-color: #202837; */
+    /* padding: 20px; */
+    /* border-radius: 5px; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+.main-content-2-col {
+    width: 44.7%;
+    display: inline-block;
+}
+.main-content-2-col img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+/* .effective-learning-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+} */
+.effective-learning {
+    /* padding-top: 100px; */
+    background-color: rgb(4, 12, 35);
+}
+.effective-learning-content h4 {
+    color: #fff;
+    /* color: #f3f6f8; */
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 98.8%;
+}
+.effective-learning-content h4 span {
+    color: #ff4400;
+    text-decoration: underline;
+}
+.effective-learning-content p {
+    padding: 24px 0;
+    font-size: 24px;
+    line-height: 140%;
+    color: #eff0f4;
+    /* color: #494b4c; */
+}
+.effective-learning-content>.content-list, .assistant-content>.content-list {
+    padding: 10px 0;
+}
+.effective-learning-content>.content-list>.content-list-item {
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: #ff4400;
+    border-radius: 10px;
+}
+.effective-learning-content>.content-list>.content-list-item p {
+    padding: 10px;
+    font-size: 18px;
+}
+.assistant {
+    width: 100%;
+    background-color: #070a15;
+}
+.assistant-content h4 {
+    color: #fff;
+    /* color: #f3f6f8; */
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 98.8%;
+}
+.assistant-content h4 span {
+    color: #ff4400;
+    text-decoration: underline;
+}
+.assistant-content p {
+    padding: 24px 0;
+    font-size: 24px;
+    line-height: 140%;
+    color: #eff0f4;
+}
+.assistant-content>.content-list>.content-list-item {
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: #f06901;
+    border-radius: 10px;
+}
+.assistant-content>.content-list>.content-list-item p {
+    padding: 10px;
+    font-size: 18px;
 }
 .description {
     padding: 64px 0;
