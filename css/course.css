@@ -495,7 +495,7 @@ nav .fa{
     /* background: radial-gradient(circle at var(--x) var(--y), transparent, rgba(0,0,0,0.7) 20%); */
     background-image: radial-gradient(
         circle farthest-side at var(--x, 100px) var(--y, 100px),
-        rgb(4, 15, 75) 0%,
+        rgb(4, 15, 55) 0%,
         transparent 100%
       );
 }
@@ -784,11 +784,17 @@ nav .fa{
     color: #eff0f4;
     /* color: #494b4c; */
 }
+.curriculum-content i {
+    font-size: 24px;
+    color: #eff0f4;
+}
 .curriculum-content>.content-list, .assistant-content>.content-list {
     padding: 10px 0;
 }
 .curriculum-content>.content-list>.content-list-item {
     padding: 10px;
+    display: flex;
+    align-items: center;
     margin-bottom: 0;
     /* background-color: #ff4400; */
     border-radius: 10px;
