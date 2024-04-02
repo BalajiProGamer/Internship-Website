@@ -287,13 +287,17 @@ nav .fa{
     font-weight: 500;
     text-decoration: underline;
     font-size: 64px;
-    line-height: 140%;
     margin-bottom: 16px;
+    line-height: 140%;
 }
 .container-column-title>h1>span {
-    /* color: #FF4400; */
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FFF;
+    text-decoration-color: #f06901;
     text-decoration: underline;
-    text-shadow: 0 0 5px rgba(4, 7, 11, .5);
+    /* text-shadow: 0 0 5px rgba(4, 7, 11, .5); */
 }
 .container-column-2 {
     width: 45%;
