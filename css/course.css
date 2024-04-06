@@ -475,13 +475,14 @@ nav .fa{
     width: 100%;
     position: relative;
     padding: 100px 0;
-    min-height: 100svh;
+    /* min-height: 100svh; */
     align-content: center;
     /* background-color: #111927; */
 }
 .main-content-container {
     width: 100%;
     max-width: 1180px;
+    align-content: center;
     margin: 0 auto;
 }
 .main-content-row {
