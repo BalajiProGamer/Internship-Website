@@ -748,7 +748,7 @@ nav .fa{
     width: 100%;
     height: 100%;
     z-index: 5;
-    background-color: #f06901;
+    background: linear-gradient(-45deg, #f06901, #ff4400);
     opacity: 0;
     transition: all .5s ease-in-out; 
     bottom: -100%;
