@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Internship</title>
+    <link rel="icon" href="image/logo_newrains.png" type="image/png">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+<style>
+    .main-container {
+        background: linear-gradient(rgba(4, 9, 45, .7), rgba(4, 9, 45, .85)),url('image/data-analysis-composition_926199-1970868.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    #loader {
+        display: none;
+        color: #ff4400;
+    }
+    #submitBtn:disabled {
+        background-color: #ff9273; 
+        color: #fefefe; 
+        cursor: not-allowed; 
+    }
+</style>
+</head>
+<body>
+    <section id="home">
+        <header>
+            <nav>
+                <a class="nav-img" href="index.html">
+                    <div class="logo-title">
+                        <img class="imglogo" src="image/logo_newrains.png">
+                        <div class="logo-name">New Rains</div>
+                    </div>
+                </a>
+                <div class="nav-links" id="navlinks">
+                    <div class="navlinks-flex">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <div class="menu-bar">
+                            <ul>
+                                <li><a class="smoothScroll" href="#home"> HOME</a></li>
+                                <li><a class="smoothScroll" href="#about"> ABOUT</a></li>
+                                <li><a class="smoothScroll" href="#course"> COURSE</a></li>
+                                <li><a class="smoothScroll" href="#contact"> REGISTER</a></li>
+                                <!-- <li><a href="#"> QUICK-LINKS</a>
+                                    <div class="sub-menu-1">
+                                        <ul>
+                                            <a href="#"><li></li></a>
+                                            <a href="#"><li>Link 1</li></a>
+                                            <a href="#"><li>Link 1</li></a>                                        
+                                        </ul>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </header>
+        <div class="main-container">
+            <div class="container">
+                <div class="container-row">
+                    <div class="container-column">                    
+                        <div class="container-column-title">
+                            <h1><span> Discover Design: </span> Unleash Your Creativity with <span>Our Introductory Course.</span> </h1>
+                        </div>
+                        <div class="container-column-list">
+                            <p>Hands-On Design Technology Training</p>
+                        </div>
+                        <div class="container-column-text">
+                            <strong>One Month Offline Internship</strong>
+                        </div>
+                        <div class="btn">
+                            <a href="index.html#register">Register Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="effective-learning" class="effective-learning">
+        <div class="main-content light">
+            <div class="main-content-container">
+                <div class="main-content-row">  
+                    <div class="main-content-2-col"> 
+                        <div class="effective-learning-content">
+                            <h4>Effective <br><span>Learning</span></h4>
+                            <p>A collaborative learning approach where Developers learn from each other through sharing ideas, feedback, and experiences.</p> 
+                            <div class="content-list">
+                                <div class="content-list-item"><p>Explore different design disciplines, from graphic design.</p></div>
+                                <div class="content-list-item"><p>Participate in challenges together</p></div>
+                                <div class="content-list-item"><p>Hands-on learning approach</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-2-col">
+                        <div class="image-container tilt">
+                            <img src="image/computer.jpg" alt="">
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assistant" class="assistant">
+        <div class="main-content">
+            <div class="main-content-container">
+                <div class="main-content-row">  
+                    <div class="main-content-2-col"> 
+                        <div class="assistant-content">
+                            <h4>Course <span>Overview</span></h4>
+                            <p>Designing is a comprehensive course designed to introduce beginners to the exciting world of design. From graphic design to digital design, this course covers the foundational principles and techniques essential for creating visually compelling and effective designs. Whether you're a budding designer or someone interested in understanding the basics of design, this course will provide you with the knowledge and skills needed to express your creativity and communicate ideas through design.</p>
+                        </div>
+                    </div>
+                    <div class="main-content-2-col">
+                        <div class="image-container tilt">
+                            <img src="image/programming.jpg">
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="key-features" class="key-features">
+        <div class="main-content light">
+            <div class="main-content-container">
+                <div class="main-content-row">  
+                    <div class="main-content-2-col"> 
+                        <div class="key-features-content">
+                            <h4>Key Features</h4>
+                            <p>Gain hands-on experience with design tools and software, such as Adobe Photoshop, Illustrator, and InDesign.</p> 
+                            <div class="content-list">
+                                <div class="content-list-item"><p>Learn the fundamental principles of design, including composition, color theory, typography, and layout.</p></div>
+                                <div class="content-list-item"><p>Explore different design disciplines, from graphic design and branding</p></div>
+                                <div class="content-list-item"><p>Apply design concepts and techniques to real-world projects</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-2-col">
+                        <div class="image-container tilt">
+                            <img src="image/it-professionals-data-centers.jpg" alt="">
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificate" class="certificate">
+        <div class="main-content">
+            <div class="main-content-container">
+                <div class="main-content-row">  
+                    <div class="main-content-2-col"> 
+                        <div class="certificate-content">
+                            <h4>Get Certified</h4>
+                            <p>Get certified as a Designer by our platform Newrains and Tetron Infotech.</p> 
+                            <div class="content-list">
+                                <div class="content-list-item"><p>Become a certified Designer</p></div>
+                                <div class="content-list-item"><p>Ready to take professional Developer roles</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-2-col">
+                        <div class="image-container tilt" style="position: relative;transform-style: preserve-3d;transform: perspective(1000px);">
+                            <img src="image/pngwing.com.png" alt="">
+                            <img src="image/transparent-badge.png" style="position: absolute;top: 60%;left: 50%;width: 60px;height: 60px;transform: translateX(-30px) translateY(-30px) translateZ(40px);" alt="" srcset="">
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <div class="main-content light">
+            <div class="main-content-container">
+                <div class="main-content-row">  
+                    <div class="main-content-2-col"> 
+                        <div class="curriculum-content">
+                            <h4>Standard <br><span>Curriculum</span></h4>
+                            <p>This curriculum covers a wide range of topics in design, including graphic design, digital design, branding, UI design, motion graphics, print design, portfolio development, and industry trends. Students will gain hands-on experience with design software and tools while working on projects that demonstrate their skills and creativity.</p> 
+                            <div class="content-list">
+                                <div class="content-list-item"><i class="fa-solid fa-arrow-right"></i><p> Introduction to digital design software (e.g., Adobe Photoshop, Illustrator)</p></div>
+                                <div class="content-list-item"><i class="fa-solid fa-arrow-right"></i><p> Designing user interfaces for websites and mobile apps</p></div>
+                                <div class="content-list-item"><i class="fa-solid fa-arrow-right"></i><p> Creating animated graphics and visual effects</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-2-col">
+                        <div class="curriculum-col">
+                            <div class="curriculum-content">
+                                <h5>Course Modules</h5>
+                                <div class="content-list">
+                                    <div class="content-list-item"><p>Module 1: Introduction to Design</p></div>
+                                    <div class="content-list-item"><p>Module 2: Graphic Design Fundamentals</p></div>
+                                    <div class="content-list-item"><p>Module 3: Digital Design Basics</p></div>
+                                    <div class="content-list-item"><p>Module 4: Branding and Identity Design</p></div>
+                                    <div class="content-list-item"><p>Module 5: User Interface (UI) Design</p></div>
+                                    <div class="content-list-item"><p>Module 6: Motion Graphics and Animation</p></div>
+                                    <div class="content-list-item"><p>Module 7: Final Project</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="main-content">
+            <div class="main-content-container">
+                <div class="main-content-row">  
+                    <div class="main-content-2-col"> 
+                        <div class="faq-content">
+                            <h4>Frequently Asked Questions</h4>                            
+                            <div class="slides-container">
+                                <div class="slides">
+                                    <div class="slide">
+                                        <p>What is design, and why is it important?</p>
+                                        <div class="slide-content">Design is the process of creating solutions to problems or challenges through visual means. It is important because it plays a crucial role in shaping the way we interact with the world around us, from products and services to digital experiences and communication.</div>
+                                    </div>
+                                    <div class="slide">
+                                        <p>Do I need any prior experience in design or art to enroll in this course?</p>
+                                        <div class="slide-content">No prior experience in design or art is required. This course is suitable for beginners with a passion for creativity and a desire to learn about design principles and techniques.</div>
+                                    </div>
+                                    <div class="slide">
+                                        <p>What software and tools will I need for this course?</p>
+                                        <div class="slide-content">Depending on the specific modules covered in the course, you may need access to design software such as Adobe Photoshop, Illustrator, InDesign, Sketch, or Figma. However, alternatives and free software options will also be discussed.</div>
+                                    </div>
+                                    <div class="slide">
+                                        <p>What career opportunities are available in the field of design?</p>
+                                        <div class="slide-content">Design offers a wide range of career opportunities in areas such as graphic design, web design, UI/UX design, motion graphics and animation, branding and identity design, print design, and more.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-2-col">
+                        <div class="image-container tilt">
+                            <img src="image/question-mark.jpg" alt="">
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-heading-container">
+                <h2>
+                    Still have queries? Contact Us
+                </h2>
+            </div>
+            <div class="footer-text-container">
+                <div class="footer-text">
+                    <p>Request a Callback. An expert from the admissions office will call you in the next 24 working hours. You can also reach out to us at <span><a href="mailto:info@newrains.com" style="color: white;">info@newrains.com</a></span> or <span><a href="tel:+918838702557" style="color: white;">+91-8838702557</a></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer footer-brand">
+        <div class="footer-container footer-brand-container">
+            <div class="footer-heading-container footer-brand-cpyrts-width">
+                <p>© Copyright 2024. Newrains All Rights Reserved</p>
+            </div>
+            <div class="footer-image">
+                <img src="image/logo_newrains.png" alt="" srcset="" height="100">
+            </div>
+            <div class="footer-text-container footer-brand-cpyrts-width">
+                <p>Designed By: <a href="https://tetroninfotech.com" target="_blank" rel="noopener noreferrer" style="color: #fff;">Tetron InfoTech</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="jQuery/jquery.min.js"></script>
+    <script src="jQuery/jquery.backtotop.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
+    <script src="js/untitled.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slide').find('.slide-content').first().slideDown();
+            $('.slide').click(function() {
+                var slideContent = $(this).find('.slide-content');
+                var paragraph = $(this).find('p');
+                var isSlideVisible = slideContent.is(':visible');
+                
+                slideContent.slideToggle('fast');
+                paragraph.css('color', isSlideVisible ? 'white' : 'white');
+                
+                $('.slide').not(this).find('p').css('color', 'white');
+                $('.slide').not(this).find('.slide-content').slideUp('fast');
+            });
+        });
+    </script>
+   <script>
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+		max: 35,
+		speed: 400,
+        easing: "cubic-bezier(.03,.98,.52,.99) 0s"
+	});
+   </script>
+   <script>
+    pos = document.documentElement;
+    pos.addEventListener('mousemove', e => {
+        pos.style.setProperty('--x', e.clientX + 'px');
+        pos.style.setProperty('--y', e.clientY + 'px');
+    })
+   </script>
+</body>
+</html>
