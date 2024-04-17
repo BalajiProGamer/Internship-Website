@@ -117,6 +117,9 @@
                         <div class="assistant-content">
                             <h4>Course <span>Overview</span></h4>
                             <p>The Full Stack Development course offers comprehensive training in both front-end and back-end web development, equipping students with the skills to build dynamic and interactive web applications. Through a combination of theoretical learning and hands-on projects, students will learn to design, develop, and deploy full-fledged web applications using a variety of technologies and frameworks.</p>
+                            <div class="btn">
+                                <a href="index.html#register">Register Now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="main-content-2-col">
@@ -283,22 +286,7 @@
     <script src="jQuery/jquery.backtotop.js"></script>
     <script src="js/vanilla-tilt.js"></script>
     <script src="js/untitled.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.slide').find('.slide-content').first().slideDown();
-            $('.slide').click(function() {
-                var slideContent = $(this).find('.slide-content');
-                var paragraph = $(this).find('p');
-                var isSlideVisible = slideContent.is(':visible');
-                
-                slideContent.slideToggle('fast');
-                paragraph.css('color', isSlideVisible ? 'white' : 'white');
-                
-                $('.slide').not(this).find('p').css('color', 'white');
-                $('.slide').not(this).find('.slide-content').slideUp('fast');
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
    <script>
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
 		max: 35,

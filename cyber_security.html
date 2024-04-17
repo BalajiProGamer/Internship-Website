@@ -13,7 +13,7 @@
   />
 <style>
     .main-container {
-        background: linear-gradient(rgba(4, 9, 45, 0.6), rgba(4, 9, 30, 0.8)),url('image/cyber-security-front-page.webp') no-repeat center center;
+        background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url('image/cyber-security-front-page.webp') no-repeat center center;
         background-size: cover;
     }
     #loader {
@@ -133,6 +133,9 @@
                                 <div class="content-list-item"><p>Hands-on sessions and guideline</p></div>
                                 <div class="content-list-item"><p>Project building and review session</p></div>
                             </div> -->
+                            <div class="btn">
+                                <a href="index.html#register">Register Now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="main-content-2-col">
@@ -302,35 +305,7 @@
     <script src="jQuery/jquery.backtotop.js"></script>
     <script src="js/vanilla-tilt.js"></script>
     <script src="js/untitled.js"></script>
-    <script type="text/javascript">
-        var navlinks=document.getElementById('navlinks');
-        var close=document.getElementById('close');
-        function showMenu() {
-            navlinks.style.right="0";
-            close.style.display="block";
-        }
-        function hideMenu(){
-            navlinks.style.right="-200px";
-            close.style.display="none";
-        }
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('.slide').find('.slide-content').first().slideDown();
-            // $('.slide').find('p').first().css('color', '#fff');
-            $('.slide').click(function() {
-                var slideContent = $(this).find('.slide-content');
-                var paragraph = $(this).find('p');
-                var isSlideVisible = slideContent.is(':visible');
-                
-                slideContent.slideToggle('fast');
-                paragraph.css('color', isSlideVisible ? 'white' : 'white');
-                
-                $('.slide').not(this).find('p').css('color', 'white');
-                $('.slide').not(this).find('.slide-content').slideUp('fast');
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
    <script>
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
 		max: 35,

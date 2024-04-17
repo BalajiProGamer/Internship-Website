@@ -494,7 +494,7 @@ nav .fa{
 }
 .main-content-2-col {
     width: 45.7%;
-    padding: 0 15px;
+    padding: 25px 15px;
     display: inline-block;
 }
 .main-content-2-col img {
@@ -574,13 +574,14 @@ nav .fa{
     background-color: #070a15;
 }
 .assistant-content h4 {
-    /* color: #673AB7; */
+    color: #9C27B0;
+    text-shadow: 0 0 1px #9C27B0;
     /* color: rgb(161, 0, 255); */
     position: relative;
-    background: linear-gradient(45deg, #9C27B0, #FF5722);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    /* background: linear-gradient(45deg, #9C27B0, #FF5722); */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* color: transparent; */
     /* color: #f3f6f8; */
     font-size: 64px;
     font-weight: 700;
@@ -593,8 +594,8 @@ nav .fa{
     left: 0;
     width: 100%;
     height: 5px;
-    background-color: #070a15;
-    background: linear-gradient(45deg , #9C27B0, #FF5722);
+    background-color: #9C27B0;
+    /* background: linear-gradient(45deg , #9C27B0, #FF5722); */
 }
 /* .assistant-content h4 span {
     color: #ff4400;
@@ -617,6 +618,38 @@ nav .fa{
 .assistant-content>.content-list>.content-list-item p {
     padding: 10px;
     font-size: 20px;
+}
+.assistant-content .btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+.assistant-content .btn a {
+    box-shadow: 0 0 20px 0 #9C27B0;
+    border: 0;
+    border-radius: 35px;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(-45deg, #9C27B0 15%, #FFF 12%, #9C27B0 20%);
+    background-size: 400%;
+    animation: gradient 5s infinite reverse;
+    font-size: 22px;
+    position: relative;
+}
+.assistant-content .btn a .fa-arrow-right {
+    opacity: 0;
+    margin-left: -15px;
+    transition: all .3s ease-in-out;
+}
+.assistant-content .btn a:hover {
+    cursor: pointer;
+    /* background: linear-gradient(to right, #FF4400, #FF9900); */
+    /* background-color: #FFF; */
+    /* color: #000; */
+}
+.assistant-content .btn a:hover .fa-arrow-right {
+    opacity: 1;
+    margin-left: 10px;
 }
 @media (max-width: 768px) {
     .assistant-content h4 {
